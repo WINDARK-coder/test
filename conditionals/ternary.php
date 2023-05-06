@@ -92,3 +92,27 @@ switch ($dayOfWeek) {
     default:
         echo "Today is $message, keep pushing!";
 }
+echo "<br>";
+
+// Example 5
+
+
+//In this example, the ternary operator is used to set a default value for the
+// $greeting variable based on the value of the $name argument. 
+//If the $name argument is not provided or is empty, the ternary operator
+// evaluates to false and the default greeting "Hello, stranger!" is assigned
+// to the $greeting variable. If the $name argument is provided and is not empty,
+// the ternary operator evaluates to true and the personalized greeting "Hello, $name!"
+// is assigned to the $greeting variable.
+
+
+function greet($name = '')
+{
+    $greeting = ($name) ? "Hello, $name!" : "Hello, stranger!";
+    echo $greeting;
+}
+
+greet(); // Output: "Hello, stranger!"
+echo "<br>";
+
+greet('John'); // Output: "Hello, John!"
