@@ -24,6 +24,8 @@ if ($key !== false) {
 } else {
     echo "'cherry' was not found in the \$fruits array";
 }
+echo "<br>";
+
 
 // In this example, `array_search()` is used to search the `$fruits` array for the value `'cherry'`.
 // If the value is found in the array, the function returns the corresponding key, which is then
@@ -53,6 +55,8 @@ if ($key !== false) {
 } else {
     echo "$search was not found in the \$animals array";
 }
+echo "<br>";
+
 // In this example, array_search() is used to search for the value 'Horse' in the $animals
 // array using strict comparison. Since the $strict parameter is set to true, the search
 // is case-sensitive and the function will only return a key if the value is found with
@@ -83,6 +87,7 @@ foreach ($people as $key => $person) {
 if (!isset($result)) {
     echo "$search was not found in the \$people array";
 }
+
 // In this example, array_search() is used to search for the value 'Charlie' in the $people array,
 // which is a multidimensional array. Since array_search() only works on one-dimensional arrays,
 // a loop is used to iterate over each sub-array in $people. The in_array() function is used to
