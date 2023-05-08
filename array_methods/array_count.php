@@ -9,8 +9,10 @@
 $fruits = array('apple', 'banana', 'orange', 'banana', 'kiwi', 'apple', 'banana');
 
 $fruit_counts = array_count_values($fruits);
-
+echo "<pre>";
 print_r($fruit_counts);
+echo "<br>";
+
 
 // In this example, we define an array `$fruits` containing several fruit names, including duplicates.
 // We then call the `array_count_values()` function on this array, and assign the result to a new variable
@@ -36,6 +38,7 @@ $numbers = array(1, 2, 3, 2, 1, 4, 5, 1);
 $number_counts = array_count_values($numbers);
 
 print_r($number_counts);
+echo "<br>";
 
 // In this example, we have an array `$numbers` containing several integers, including duplicates.
 // We call the `array_count_values()` function on this array, and assign the result to a new variable
@@ -63,6 +66,7 @@ $words = explode(" ", $string);
 $word_counts = array_count_values($words);
 
 print_r($word_counts);
+echo "<br>";
 
 // In this example, we have a string `$string` containing several words. We first use the `explode()`
 // function to split the string into an array of individual words. We then call the `array_count_values()`
